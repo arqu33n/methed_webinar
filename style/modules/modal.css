@@ -1,0 +1,114 @@
+.modal {
+  margin: 40px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default;
+  text-align: left;
+  white-space: normal;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  max-width: 688px;
+  transition-property: opacity, visibility;
+  /* transition-duration: 0.36s; */
+  transition-timing-function: ease-in-out;
+}
+.modal_open {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__container {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 20px 20px 45px;
+  position: relative;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #55c2ff;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+.modal__person {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-bottom: 27px;
+}
+.modal__label {
+  display: block;
+  flex-grow: 1;
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858585;
+  margin-right: 16px;
+}
+.modal__label:last-child {
+  margin-right: 0px;
+}
+.modal__input {
+  display: block;
+  height: 36px;
+  border: 1px solid #68b7ff;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal__close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  color: #55c2ff;
+}
+.modal__order {
+  display: block;
+  margin: 0 auto;
+  max-width: 232px;
+  width: 100%;
+  background: #55c2ff;
+  border-radius: 8px;
+  padding: 11px 41px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+@media (max-width: 480px) {
+  .modal__container {
+    padding: 20px 13px 26px;
+  }
+  .modal__person {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .modal__title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  .modal__label {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .modal__label:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .modal__close {
+    right: 0;
+    top: -2px;
+    transform: translateY(-100%);
+  }
+}
