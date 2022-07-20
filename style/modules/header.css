@@ -1,6 +1,6 @@
 .header {
   background-color: #fff;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 .header__logo {
@@ -13,6 +13,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #fff;
+  position: relative;
 }
 .header__nav-btn {
   display: none;
@@ -30,6 +31,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    top: -300px;
     /* transform: translateY(100%); */
     z-index: -1;
     background-color: #fff;
