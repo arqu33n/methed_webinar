@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import url(normalize.css);
 @import url(fonts.css);
 @import url(default.css);
 @import url(modules/header.css);
